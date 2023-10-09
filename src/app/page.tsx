@@ -1,5 +1,6 @@
 "use client";
 import Switch from "@/components/Switch";
+import { logo, profileImage, resume_pdf } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Caveat, Comfortaa, Indie_Flower } from "next/font/google";
 import Image from "next/image";
@@ -10,6 +11,7 @@ const caveat = Caveat({
   weight: "400",
   subsets: ["latin"],
 });
+
 
 const indie = Indie_Flower({
   weight: "400",
@@ -58,7 +60,7 @@ export default function Home() {
       md:w-4/5 pt-3 h-[var(--header-h)] px-8 items-center `)}
       >
         <span className="h-10 w-10 flex justify-center items-center">
-          <Image src="/logo.png" alt="" width={100} height={100} />
+          <Image src={logo} alt="" width={100} height={100} />
         </span>
         <nav className="dark:text-white w-2/5 lg:w-1/5 hidden md:block">
           <ul
@@ -97,7 +99,7 @@ export default function Home() {
                   className={`border-2 px-3 py-1 rounded-md flex items-center gap-3 ${rubic.className}
                   shadow-lg bg-black text-white dark:bg-white dark:text-black
                   text-lg`}
-                  href={`/assets/Resume_Ezzitouni_Med.pdf`}
+                  href={resume_pdf}
                   target="_blank"
                 >
                   <i className="fa fa-file-pdf-o"></i>{" "}
@@ -111,9 +113,10 @@ export default function Home() {
             <div
               className="h-72 w-72 md:h-96 md:w-96 bg-cover bg-no-repeat rounded-[33%_67%_65%_35%/62%_55%_45%_38%]"
               style={{
-                backgroundImage: "url('/assets/profile.jpg')",
+                backgroundImage: `url(${profileImage})`,
               }}
-            ></div>
+            >
+            </div>
           </div>
         </section>
         <section

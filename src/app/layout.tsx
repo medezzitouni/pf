@@ -1,3 +1,4 @@
+import { withBasPath } from '@/lib/constants';
 import 'animate.css';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -9,11 +10,11 @@ export const metadata: Metadata = {
   title: "Portfolio",
   description: "Mohammed Ezzitouni portfolio",
   themeColor: '#ffffff',
-  manifest: '/site.webmanifest',
+  manifest: withBasPath('/site.webmanifest'),
   icons: {
     icon: [
       {
-        url: "/favicon-32x32.png",
+        url: withBasPath("/favicon-32x32.png"),
         type: "image/png",
         sizes: "32x32",
         // color: ,
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
         // media?: string;
       },
       {
-        url: "/favicon-32x32.png",
+        url: withBasPath("/favicon-32x32.png"),
         type: "image/png",
         sizes: "16x16",
         // color: ,
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
         // media?: string;
       },
       {
-        url: "/apple-touch-icon.png",
+        url: withBasPath("/apple-touch-icon.png"),
         sizes: "180x180",
         // color: ,
         /** defaults to rel="icon" unless superseded by Icons map */
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
         // media?: string;
       },
       {
-        url: '/safari-pinned-tab.svg',
+        url: withBasPath('/safari-pinned-tab.svg'),
         color: '#5bbad5',
         /** defaults to rel="icon" unless superseded by Icons map */
         rel: 'mask-icon',
