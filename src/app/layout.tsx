@@ -1,3 +1,4 @@
+import 'animate.css';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -57,6 +58,7 @@ export default function RootLayout({
   
   return (
     <html lang="en" className={inter.className}>
+      <script src="https://kit.fontawesome.com/c5930a752e.js" async ></script>
       {children}
     </html>
   );

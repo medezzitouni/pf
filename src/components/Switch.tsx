@@ -29,7 +29,8 @@ export default function Switch({ handleDark, dark }: Props) {
             transform rounded-full dark:bg-white bg-black
             shadow-lg ring-0 transition duration-200 ease-in-out`}
       >
-        <i className="fa fa-moon-o dark:text-black text-white"></i>
+        {/* <i className="fa fa-moon-o dark:text-black text-white"></i> */}
+        <i className="fa-solid fa-circle-half-stroke dark:text-black text-white"></i>
       </span>
     </OriginalSwitch>
   );
