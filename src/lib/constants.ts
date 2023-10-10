@@ -8,9 +8,6 @@ export const withBasPath = (path: string) => `${basePath}${path}`
 export const profileImage = withBasPath('/assets/profile.jpg');
 export const logo = withBasPath('/logo.png');
 export const resume_pdf = '/assets/Resume_Ezzitouni_Med.pdf';
-<<<<<<< Updated upstream
-=======
-
 
 // fonts
 
@@ -30,4 +27,3 @@ export const rubic = Comfortaa({
     weight: "600",
     subsets: ["latin"],
 });
->>>>>>> Stashed changes
