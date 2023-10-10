@@ -26,15 +26,15 @@ type Props = {
 };
 
 const langs: Record<string, { nativeName: string; switchTo: string; switchToKey: string }> = {
-  en: {
+  'en-US': {
     nativeName: "English",
     switchTo: "French",
-    switchToKey: "fr"
+    switchToKey: "fr-FR"
   },
-  fr: {
+  'fr-FR': {
     nativeName: "Français",
     switchTo: "Anglais",
-    switchToKey: "en"
+    switchToKey: "en-US"
   },
 };
 export default function Header({ dark, handleDark }: Props) {
