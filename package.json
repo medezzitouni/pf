@@ -13,9 +13,12 @@
     "@headlessui/react": "^1.7.17",
     "animate.css": "^4.1.1",
     "clsx": "^2.0.0",
+    "i18next": "^23.5.1",
+    "i18next-browser-languagedetector": "^7.1.0",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-i18next": "^13.2.2",
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
