@@ -8,16 +8,16 @@ i18next.
     use(initReactI18next)
     .use(LanguageDetector)
     .init({
-        fallbackLng: ['en', 'fr'],
+        fallbackLng: ['en-US', 'fr-FR'],
         load: 'currentOnly',
         interpolation: {
             escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
         },
         resources: {
-            en: {
+            'en-US': {
                 translation: enjson,
             },
-            fr: {
+            'fr-FR': {
                 translation: frjosn,
             }
         }
