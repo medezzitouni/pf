@@ -1,11 +1,12 @@
 "use client";
 
-import { inter, withBasPath } from '@/lib/constants';
-import '@/lib/i18n/config';
-import 'animate.css';
+import { inter, withBasPath } from "@/lib/constants";
+import "animate.css";
 
-import Head from 'next/head';
+import Head from "next/head";
 import "./globals.css";
+
+import React from "react";
 
 // export const metadata: Metadata = {
 //   title: "Portfolio",
@@ -56,20 +57,38 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
   return (
     <html lang="en" className={inter.className}>
       <Head>
         <title>Portfolio</title>
         <meta name="description" content="Mohammed Ezzitouni portfolio"></meta>
-        <link rel="shortcut icon"  href={withBasPath("/favicon-32x32.png")} type="image/png" sizes="32x32" />
-        <link rel="shortcut icon"  href={withBasPath("/favicon-16x16.png")} type="image/png" sizes="16x16" />
-        <link rel="apple-touch-icon"  href={withBasPath("/apple-touch-icon.png")} type="image/png" sizes="180x180" />
-        <link rel="mask-icon"  href={withBasPath('/safari-pinned-tab.svg')} color='#5bbad5' />
-        <link rel="manifest" href={withBasPath('/site.webmanifest')} />
+        <link
+          rel="shortcut icon"
+          href={withBasPath("/favicon-32x32.png")}
+          type="image/png"
+          sizes="32x32"
+        />
+        <link
+          rel="shortcut icon"
+          href={withBasPath("/favicon-16x16.png")}
+          type="image/png"
+          sizes="16x16"
+        />
+        <link
+          rel="apple-touch-icon"
+          href={withBasPath("/apple-touch-icon.png")}
+          type="image/png"
+          sizes="180x180"
+        />
+        <link
+          rel="mask-icon"
+          href={withBasPath("/safari-pinned-tab.svg")}
+          color="#5bbad5"
+        />
+        <link rel="manifest" href={withBasPath("/site.webmanifest")} />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <script src="https://kit.fontawesome.com/c5930a752e.js" async ></script>
+      <script src="https://kit.fontawesome.com/c5930a752e.js" async></script>
       {children}
     </html>
   );

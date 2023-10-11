@@ -1,32 +1,18 @@
-import { caveat, langs, logo } from "@/lib/constants";
+import { caveat, langs, logo, nav } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import Switch from "./Switch";
 
-const nav = [
-  {
-    url: "#home",
-    name: "home",
-  },
-  {
-    url: "#about",
-    name: "about",
-  },
-  {
-    url: "#projects",
-    name: "projects",
-  },
-];
-
 type Props = {
   dark: boolean;
   handleDark: (enabled: boolean) => void;
+  handleSideBar: () => void;
 };
 
 
-export default function Header({ dark, handleDark }: Props) {
+export default function Header({ dark, handleDark, handleSideBar }: Props) {
   const { t, i18n } = useTranslation();
   
   return (
@@ -34,9 +20,12 @@ export default function Header({ dark, handleDark }: Props) {
       className={cn(`fixed flex self-center justify-between w-full
   md:w-4/5 pt-3 h-[var(--header-h)] px-8 items-center `)}
     >
-      <span className="h-10 w-10 flex justify-center items-center ">
+      <span className="h-10 w-10 md:flex justify-center items-center ">
         <Image src={logo} alt="" width={100} height={100} />
       </span>
+      {/* <span className="h-10 md:hidden w-10 flex justify-center items-center ">
+        <i className="dark:text-white fas fa-bars cursor-pointer" onClick={handleSideBar}></i>
+      </span> */}
       <nav className="dark:text-white w-2/5 lg:w-1/5 hidden md:block">
         <ul
           className={

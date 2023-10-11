@@ -16,7 +16,7 @@ function Home() {
     >
       <div className="md:w-1/2 md:h-full flex justify-end items-center ">
         <div className="h-72 md:w-3/4 flex flex-col justify-center">
-          <h1 className={`text-5xl ${indie.className} text-center`}>
+          <h1 className={`text-5xl ${indie.className} text-center leading-tight`}>
             {t('welcome')}
           </h1>
           <h1 className={`text-xl ${indie.className} text-center`}>
