@@ -1,4 +1,4 @@
-import { caveat, logo } from "@/lib/constants";
+import { caveat, langs, logo } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,18 +25,7 @@ type Props = {
   handleDark: (enabled: boolean) => void;
 };
 
-const langs: Record<string, { nativeName: string; switchTo: string; switchToKey: string }> = {
-  'en-US': {
-    nativeName: "English",
-    switchTo: "French",
-    switchToKey: "fr-FR"
-  },
-  'fr-FR': {
-    nativeName: "Français",
-    switchTo: "Anglais",
-    switchToKey: "en-US"
-  },
-};
+
 export default function Header({ dark, handleDark }: Props) {
   const { t, i18n } = useTranslation();
   
@@ -63,7 +52,7 @@ export default function Header({ dark, handleDark }: Props) {
       </nav>
       <div id="langs" className="flex gap-4">
         <Switch dark={dark} handleDark={handleDark} className="" />
-        <button className="bg-black text-white dark:text-black dark:bg-white text-sm border py-1 px-3 rounded-2xl"
+        <button className="bg-black text-white dark:text-black dark:bg-white text-xs border py-1 px-3 rounded-2xl"
           onClick={() => i18n.changeLanguage(langs[i18n.resolvedLanguage!]?.switchToKey)}
         >
           {langs[i18n.resolvedLanguage!]?.switchTo}

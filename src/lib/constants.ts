@@ -7,7 +7,24 @@ export const withBasPath = (path: string) => `${basePath}${path}`
 
 export const profileImage = withBasPath('/assets/profile.jpg');
 export const logo = withBasPath('/logo.png');
-export const resume_pdf = '/assets/Resume_Ezzitouni_Med.pdf';
+export const en_resume_pdf = '/assets/Resume_Ezzitouni_Med.pdf';
+export const fr_resume_pdf = '/assets/CV_Ezzitouni_Med.pdf';
+
+
+// localization
+
+export const langs: Record<string, { nativeName: string; switchTo: string; switchToKey: string }> = {
+    'en-US': {
+        nativeName: "English",
+        switchTo: "French",
+        switchToKey: "fr-FR"
+    },
+    'fr-FR': {
+        nativeName: "Français",
+        switchTo: "Anglais",
+        switchToKey: "en-US"
+    },
+};
 
 // fonts
 
