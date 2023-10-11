@@ -10,7 +10,22 @@ export const logo = withBasPath('/logo.png');
 export const en_resume_pdf = '/assets/Resume_Ezzitouni_Med.pdf';
 export const fr_resume_pdf = '/assets/CV_Ezzitouni_Med.pdf';
 
+// navigation
 
+export const nav = [
+    {
+        url: "#home",
+        name: "home",
+    },
+    {
+        url: "#about",
+        name: "about",
+    },
+    {
+        url: "#projects",
+        name: "projects",
+    },
+];
 // localization
 
 export const langs: Record<string, { nativeName: string; switchTo: string; switchToKey: string }> = {
