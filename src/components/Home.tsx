@@ -1,12 +1,10 @@
-import { indie, profileImage, resume_pdf, rubic } from "@/lib/constants";
+import { en_resume_pdf, fr_resume_pdf, indie, profileImage, rubic } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 function Home() {
 
-    const { t } = useTranslation(undefined, {
-        useSuspense: true
-    });
+    const { t, i18n } = useTranslation();
   return (
     <section
       id="home"
@@ -29,7 +27,7 @@ function Home() {
               className={`border-2 px-3 py-1 rounded-md flex items-center gap-3 ${rubic.className}
                   shadow-lg bg-black text-white dark:bg-white dark:text-black
                   text-lg`}
-              href={resume_pdf}
+              href={ i18n.language === 'en-US' ? en_resume_pdf : fr_resume_pdf}
               target="_blank"
             >
               <i className="fa fa-file-pdf-o"></i>{" "}
