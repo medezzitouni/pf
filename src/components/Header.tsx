@@ -2,31 +2,77 @@ import { caveat, langs, logo, nav } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import MobileMenu from "./MobileMenu";
 import Switch from "./Switch";
 
 type Props = {
   dark: boolean;
   handleDark: (enabled: boolean) => void;
-  handleSideBar: () => void;
+  handleSideBar?: (val?: boolean) => () => void;
+  sideBar?: boolean;
 };
 
+const direction = (prev: number, curr: number) => (prev > curr ? -1 : 1); // -1 : up, 1: down
+let prevDirection = 0;
 
-export default function Header({ dark, handleDark, handleSideBar }: Props) {
+export default function Header({
+  dark,
+  handleDark,
+  // handleSideBar,
+  // sideBar,
+}: Props) {
   const { t, i18n } = useTranslation();
-  
+  const [hide, setHide] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+  const handleScroll = () => {
+    // uncomment this when you switch to a side bar instead of mobile Menu
+    // if (sideBar) handleSideBar(false)();
+
+    const currDir = direction(scrollY, window.scrollY);
+
+    if (prevDirection !== currDir && currDir === -1) setHide(false);
+    else if (prevDirection !== currDir && currDir === 1 && window.scrollY >= 50)
+      setHide(true);
+
+    if (window.scrollY >= 50) prevDirection = currDir;
+    setScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
   return (
     <header
       className={cn(`fixed flex self-center justify-between w-full
-  md:w-4/5 pt-3 h-[var(--header-h)] px-8 items-center `)}
+      md:w-4/5 lg:w-3/5 md:mt-2 h-[var(--header-h)] px-8 items-center
+    ${
+      hide
+        ? "hidden"
+        : scrollY < 50
+        ? "dark:text-white"
+        : "bg-black text-white bg-opacity-40 dark:bg-white dark:bg-opacity-50 dark:text-black md:rounded-full"
+    }`)}
     >
-      <span className="h-10 w-10 md:flex justify-center items-center ">
+      <span className="h-10 w-10 hidden md:flex justify-center items-center ">
         <Image src={logo} alt="" width={100} height={100} />
       </span>
-      {/* <span className="h-10 md:hidden w-10 flex justify-center items-center ">
-        <i className="dark:text-white fas fa-bars cursor-pointer" onClick={handleSideBar}></i>
-      </span> */}
-      <nav className="dark:text-white w-2/5 lg:w-1/5 hidden md:block">
+      <span className="h-10 md:hidden w-10 flex justify-center items-center ">
+        <MobileMenu>
+          <i
+            className={`${
+              scrollY < 50 ? "dark:text-white" : "dark:text-black"
+            }  fas fa-bars cursor-pointer text-xl`}
+            // onClick={handleSideBar()}
+          ></i>
+        </MobileMenu>
+      </span>
+      <nav className="md:w-2/5 lg:w-2/5 hidden md:block">
         <ul
           className={
             caveat.className + " flex justify-between items-center text-xl"
@@ -41,8 +87,16 @@ export default function Header({ dark, handleDark, handleSideBar }: Props) {
       </nav>
       <div id="langs" className="flex gap-4">
         <Switch dark={dark} handleDark={handleDark} className="" />
-        <button className="bg-black text-white dark:text-black dark:bg-white text-xs border py-1 px-3 rounded-2xl"
-          onClick={() => i18n.changeLanguage(langs[i18n.resolvedLanguage!]?.switchToKey)}
+        <button
+          className={`${
+            scrollY < 50
+              ? "bg-black text-white dark:text-black dark:bg-white"
+              : "bg-white text-black  dark:text-white dark:bg-black"
+          }
+          text-xs border-2 py-1 px-3 rounded-2xl`}
+          onClick={() =>
+            i18n.changeLanguage(langs[i18n.resolvedLanguage!]?.switchToKey)
+          }
         >
           {langs[i18n.resolvedLanguage!]?.switchTo}
         </button>

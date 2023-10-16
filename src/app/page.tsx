@@ -11,7 +11,9 @@ export default function Index() {
   const [dark, setDark] = useState(false);
   const [sideBar, setSideBar] = useState(false);
 
-  const handleSideBar = () => setSideBar(!sideBar);
+  const handleSideBar =
+    (val: boolean | undefined = undefined) =>
+    () => setSideBar(val ?? !sideBar);
 
   useEffect(() => {
     setDark(
@@ -29,11 +31,12 @@ export default function Index() {
   return (
     <body className={`${dark ? "dark" : ""} flex flex-col`}>
       <NoSSR>
-        {/* <Side sideBar={sideBar} handleSideBar={handleSideBar} /> */}
+        {/*
+         uncomment this when you switch to a side bar instead of mobile Menu
+         <Side sideBar={sideBar} handleSideBar={handleSideBar} /> */}
         <Header
           dark={dark}
           handleDark={handleDark}
-          handleSideBar={handleSideBar}
         />
         <main className="flex flex-col min-h-screen justify-between bg-white dark:bg-black dark:text-white">
           <Home />
