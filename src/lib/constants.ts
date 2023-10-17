@@ -4,7 +4,29 @@ export const basePath = process.env.NEXT_PUBLIC_NODE_ENV === 'development' ? '' 
 
 export const withBasPath = (path: string) => `${basePath}${path}`
 
+export const client_logos_folder = '/assets/client_logos';
 
+// client logos
+export const client_logos = {
+    ametys: {
+        img: withBasPath(`${client_logos_folder}/ametys.png`),
+        url: 'https://www.ametys.org/community/en/index.html'
+    },
+    plogg: {
+        img: withBasPath(`${client_logos_folder}/plogg.png`),
+        url: 'https://www.plogg.ca'
+    },
+    walo: {
+        img: withBasPath(`${client_logos_folder}/walo.png`),
+        url: 'https://walo.app'
+    },
+    ipagency: {
+        img: withBasPath(`${client_logos_folder}/ipagency.png`),
+        url: 'https://www.ipagency.it'
+    }
+}
+
+// profile images
 export const profileImage = withBasPath('/assets/profile.jpg');
 export const aboutImage = withBasPath('/assets/about.jpg');
 
