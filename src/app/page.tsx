@@ -1,5 +1,6 @@
 "use client";
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Home from "@/components/Home";
 import NoSSR from "@/components/NoSSR";
@@ -42,6 +43,7 @@ export default function Index() {
           <Home />
           <About />
           <Projects />
+          <Contact />
         </main>
       </NoSSR>
     </body>

@@ -34,7 +34,7 @@ export default function MobileMenu({ children }: Props) {
             ring-1 ring-black dark:ring-gray-800 ring-opacity-5 focus:outline-none
             rounded-md shadow-lg
         `}>
-          {nav.map((el, index) => (
+          {Object.values(nav).map((el, index) => (
             <div className="px-1 py-1" key={index}>
               <Menu.Item>
                 {({ active }) => (

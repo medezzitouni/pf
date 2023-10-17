@@ -50,7 +50,7 @@ export default function Header({
   return (
     <header
       className={cn(`fixed flex self-center justify-between w-full
-      md:w-4/5 lg:w-3/5 md:mt-2 h-[var(--header-h)] px-8 items-center
+      md:w-11/12 lg:w-9/12 md:mt-2 h-[var(--header-h)] px-8 items-center
     ${
       hide
         ? "hidden"
@@ -72,13 +72,13 @@ export default function Header({
           ></i>
         </MobileMenu>
       </span>
-      <nav className="md:w-2/5 lg:w-2/5 hidden md:block">
+      <nav className="hidden md:block md:w-2/5">
         <ul
           className={
             caveat.className + " flex justify-between items-center text-xl"
           }
         >
-          {nav.map((el, i) => (
+          {Object.values(nav).map((el, i) => (
             <li key={i}>
               <Link href={el.url}>{t(el.name)}</Link>
             </li>
