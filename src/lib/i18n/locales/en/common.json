@@ -5,5 +5,9 @@
   "home": "Home",
   "about": "About",
   "projects": "Projects",
-  "coming_soon": "Coming Soon!"
+  "coming_soon": "Coming Soon!",
+  "intro" : "As a highly skilled software engineer specializing in web technologies, I possess exceptional expertise. With a track record of creating high-performance full-stack web applications, I have mastered a range of modern tools such as React.js, Vue.js, Node.js.",
+  "intro_long": "En tant qu'ingénieur logiciel hautement qualifié spécialisé dans les technologies web, je suis porteur d'une expertise exceptionnelle. Fort d'un historique de création d'applications web full-stack à haute performance, j'ai maîtrisé une gamme d'outils modernes tels que React.js, Vue.js, Node.js, Express, Nest, et dans une moindre mesure Spring, Django. Ma compétence s'étend également aux bases de données, notamment Postgresql, MySQL, Firebase et MongoDB.",
+  "read_more": "Read more...",
+  "contact_us": "Contact me"
 }

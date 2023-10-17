@@ -6,7 +6,10 @@ export const withBasPath = (path: string) => `${basePath}${path}`
 
 
 export const profileImage = withBasPath('/assets/profile.jpg');
+export const aboutImage = withBasPath('/assets/about.jpg');
+
 export const logo = withBasPath('/logo.png');
+
 export const en_resume_pdf = '/assets/Resume_Ezzitouni_Med.pdf';
 export const fr_resume_pdf = '/assets/CV_Ezzitouni_Med.pdf';
 
@@ -15,20 +18,27 @@ export const aboutStartPoint = 839;
 export const projectsStartPoint = 1678;
 // navigation
 
-export const nav = [
-    {
+export type Nav = { url: string, name: string };
+
+export const nav: Record<string, Nav> = {
+    home: {
         url: "#home",
         name: "home",
     },
-    {
+    about: {
         url: "#about",
         name: "about",
     },
-    {
+    projects: {
         url: "#projects",
         name: "projects",
     },
-];
+    contact: {
+        url: "#contact",
+        name: "contact",
+    }
+}
+
 // localization
 
 export const langs: Record<string, { nativeName: string; switchTo: string; switchToKey: string }> = {

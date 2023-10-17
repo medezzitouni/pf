@@ -1,9 +1,14 @@
 {
   "welcome": "Bonjour Je suis Med Ezzitouni",
   "position": "Ingénieur logiciel",
-  "resume": "CV",
+  "resume": "Curriculum vitae",
   "home": "Accueil",
   "about": "À propos",
   "projects": "Projets",
-  "coming_soon": "Bientôt Disponible!"
+  "coming_soon": "Bientôt Disponible!",
+  "intro": "En tant qu'ingénieur logiciel hautement qualifié spécialisé dans les technologies web, je suis porteur d'une expertise exceptionnelle. Fort d'un historique de création d'applications web full-stack à haute performance, j'ai maîtrisé une gamme d'outils modernes tels que React.js, Vue.js, Node.js",
+  "intro_long": "En tant qu'ingénieur logiciel hautement qualifié spécialisé dans les technologies web, je suis porteur d'une expertise exceptionnelle. Fort d'un historique de création d'applications web full-stack à haute performance, j'ai maîtrisé une gamme d'outils modernes tels que React.js, Vue.js, Node.js, Express, Nest, et dans une moindre mesure Spring, Django. Ma compétence s'étend également aux bases de données, notamment Postgresql, MySQL, Firebase et MongoDB.",
+  "read_more": "Lire plus...",
+  "contact_us": "Contactez moi"
+
 }
