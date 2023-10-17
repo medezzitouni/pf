@@ -7,19 +7,21 @@ function About() {
   return (
     // <section
     //   id="about"
-    //   className={`h-screen flex pt-[var(--header-h)]`}
+    //   className={`h-screen flex pt-[var(--header-h)]  bg-red-400`}
     //   // pt-[var(--header-h)]
     // >
-    //   <div className="w-1/2 h-full flex justify-center">
+    //   <div className="flex justify-center items-start w-1/2 h-full bg-red-"
+    //   >
     //     <div
-    //       style={{ backgroundImage: `url(${aboutImage})` }}
     //       className={`
-    //         h-72 w-72 md:portrait:h-96 md:portrait:w-96 lg:h-2/3 lg:w-2/3 bg-cover bg-no-repeat bg-center
-    //         rounded-[84%_16%_77%_23%/22%_93%_7%_78%]
+    //         w-4/5 h-4/5 bg-cover bg-no-repeat bg-center rounded-[46%_54%_37%_63%/60%_28%_72%_40%]
     //       `}
+    //       style={{ backgroundImage: `url(${aboutImage})` }}
     //     ></div>
     //   </div>
-
+    //   <div className={`w-1/2 ${rubic.className} `}>
+    //     <p>{t("intro_long")}</p>
+    //   </div>
     // </section>
     <section
       id="about"
