@@ -1,12 +1,33 @@
+// fonts
+
 import { Caveat, Comfortaa, Indie_Flower, Inter } from "next/font/google";
 
+export const inter = Inter({ subsets: ["latin"] });
+
+export const caveat = Caveat({
+    weight: "400",
+    subsets: ["latin"],
+});
+
+export const indie = Indie_Flower({
+    weight: "400",
+    subsets: ["latin"],
+});
+
+export const rubic = Comfortaa({
+    weight: "600",
+    subsets: ["latin"],
+});
+
+// basePath
 export const basePath = process.env.NEXT_PUBLIC_NODE_ENV === 'development' ? '' : '/pf';
 
+// basePath helper
 export const withBasPath = (path: string) => `${basePath}${path}`
 
-export const client_logos_folder = '/assets/client_logos';
-
 // client logos
+export const client_logos_folder = '/assets/client_logos/';
+
 export const client_logos = {
     ametys: {
         img: withBasPath(`${client_logos_folder}/ametys.png`),
@@ -35,11 +56,7 @@ export const logo = withBasPath('/logo.png');
 export const en_resume_pdf = '/assets/Resume_Ezzitouni_Med.pdf';
 export const fr_resume_pdf = '/assets/CV_Ezzitouni_Med.pdf';
 
-// sections start points
-export const aboutStartPoint = 839;
-export const projectsStartPoint = 1678;
 // navigation
-
 export type Nav = { url: string, name: string };
 
 export const nav: Record<string, Nav> = {
@@ -62,7 +79,6 @@ export const nav: Record<string, Nav> = {
 }
 
 // localization
-
 export const langs: Record<string, { nativeName: string; switchTo: string; switchToKey: string }> = {
     'en-US': {
         nativeName: "English",
@@ -75,22 +91,3 @@ export const langs: Record<string, { nativeName: string; switchTo: string; switc
         switchToKey: "en-US"
     },
 };
-
-// fonts
-
-export const inter = Inter({ subsets: ["latin"] });
-
-export const caveat = Caveat({
-    weight: "400",
-    subsets: ["latin"],
-});
-
-export const indie = Indie_Flower({
-    weight: "400",
-    subsets: ["latin"],
-});
-
-export const rubic = Comfortaa({
-    weight: "600",
-    subsets: ["latin"],
-});

@@ -63,7 +63,7 @@ export default function Header({
         <Image src={logo} alt="" width={100} height={100} />
       </span>
       <span className="h-10 md:hidden w-10 flex justify-center items-center ">
-        <MobileMenu>
+        <MobileMenu handleHide={(hide: boolean) => setHide(hide)}>
           <i
             className={`${
               scrollY < 50 ? "dark:text-white" : "dark:text-black"
@@ -80,7 +80,11 @@ export default function Header({
         >
           {Object.values(nav).map((el, i) => (
             <li key={i}>
-              <Link href={el.url}>{t(el.name)}</Link>
+              <Link onClick={() => {
+                setTimeout(() => { setHide(false) }, 100)
+              }}
+              
+              href={el.url}>{t(el.name)}</Link>
             </li>
           ))}
         </ul>

@@ -6,9 +6,25 @@
   "about": "À propos",
   "projects": "Projets",
   "coming_soon": "Bientôt Disponible!",
+  "intro_long": "En tant qu'ingénieur logiciel hautement qualifié spécialisé dans les technologies web, je suis porteur d'une expertise exceptionnelle. Fort d'un historique de création d'applications web full-stack à haute performance, j'ai maîtrisé une gamme d'outils modernes tels que React.js, Vue.js, Node.js, Express, Nest, et dans une moindre mesure Angular, Spring, Django. Ma compétence s'étend également aux bases de données, notamment Postgresql, MySQL, Redis, Firebase et MongoDB.",
+
   "intro": "En tant qu'ingénieur logiciel hautement qualifié spécialisé dans les technologies web, je suis porteur d'une expertise exceptionnelle. Fort d'un historique de création d'applications web full-stack à haute performance, j'ai maîtrisé une gamme d'outils modernes tels que React.js, Vue.js, Node.js",
-  "intro_long": "En tant qu'ingénieur logiciel hautement qualifié spécialisé dans les technologies web, je suis porteur d'une expertise exceptionnelle. Fort d'un historique de création d'applications web full-stack à haute performance, j'ai maîtrisé une gamme d'outils modernes tels que React.js, Vue.js, Node.js, Express, Nest, et dans une moindre mesure Spring, Django. Ma compétence s'étend également aux bases de données, notamment Postgresql, MySQL, Firebase et MongoDB.",
+  
+  "about_intro": "je maîtrise une gamme d'outils modernes tels que React.js, Vue.js, Node.js, Express, Nest, et dans une moindre mesure Angular, Spring, Django. Ma compétence s'étend également aux bases de données, notamment Postgresql, MySQL, Redis, Firebase et MongoDB.",
   "read_more": "Lire plus...",
-  "contact_us": "Contactez moi"
+  "contact_us": "Contactez moi",
+  "functional_skills": "Compétences fonctionnelles:",
+  "functional_skills_1": "Assistance à maitrise d’œuvre",
+  "functional_skills_2": "Métiers",
+  "functional_skills_1_details": "Analyse, Conception (UML), Revue de code et Support technique.",
+  "functional_skills_2_details": "Banque, Retail, E-Business et d’autres",
+  "functional_skills_2_details_1": "Participation à la conception des projets from scratch.",
+  "functional_skills_2_details_2": "Documenter le travail réalisé.",
+  "functional_skills_2_details_3": "Participation à la transformation digitale.",
+  "functional_skills_2_details_4": "Travail en équipe pour réaliser la vision projet.",
+  "functional_skills_2_details_5": "Création de test unitaires.",
+  "functional_skills_2_details_6": "Spécification fonctionnelle.",
+  "functional_skills_2_details_7": "La correction des bugs remontées par les utilisateurs des solutions."
+
 
 }
