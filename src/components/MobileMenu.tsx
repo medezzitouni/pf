@@ -6,8 +6,9 @@ import { useTranslation } from "react-i18next";
 
 type Props = {
   children: React.ReactElement;
+  handleHide: (enable: boolean) => void;
 };
-export default function MobileMenu({ children }: Props) {
+export default function MobileMenu({ children, handleHide }: Props) {
   const { t } = useTranslation();
 
   return (
@@ -40,6 +41,9 @@ export default function MobileMenu({ children }: Props) {
                 {({ active }) => (
                   <Link
                     href={el.url}
+                    onClick={() => {
+                      setTimeout(() => { handleHide(false) }, 100)
+                    }}
                     className={`${
                       active ? "bg-black dark:bg-gray-300 bg-opacity-10 dark:bg-opacity-20 " : "text-gray-900 dark:text-gray-100"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}

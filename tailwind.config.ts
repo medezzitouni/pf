@@ -31,13 +31,31 @@ const config: Config = {
           },
           "100%": {
           }
+        },
+        glich: {
+          "0%": {
+            transform: "translate(0)"
+          },
+          "25%": {
+            transform: "translate(-5px, 5px)"
+          },
+          "50%": {
+            transform: "translate(5px, -5px)"
+          },
+          "75%": {
+            transform: "translate(-5px, 5px)"
+          },
+          "100%": {
+            transform: "translate(0)"
+          }
         }
       },
       animation: {
         typing: "typing 3s steps(200) alternate",
         "typing-infinite": "typing 3s steps(200) infinite alternate",
         "typing-blink": "typing 3s steps(200) alternate, blink .7s infinite",
-        "typing-tb-infinite": "typing 3s steps(200) infinite alternate, blink .7s infinite"
+        "typing-tb-infinite": "typing 3s steps(200) infinite alternate, blink .7s infinite",
+        glich: "glich 1s infinite"
       }
     },
   },

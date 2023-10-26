@@ -8,10 +8,9 @@ import {
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
-
 type Props = {
   className?: string;
-}
+};
 function Intro({ className }: Props) {
   const { t, i18n } = useTranslation();
 
@@ -24,7 +23,7 @@ function Intro({ className }: Props) {
           >
             {t("welcome")}
           </h1>
-          <h2 className={`text-lg md:text-2xl ${indie.className}`}>
+          <h2 className={`text-lg md:text-2xl ${indie.className} `}>
             {t("position")}
           </h2>
           <p

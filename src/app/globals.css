@@ -5,6 +5,7 @@
 
 :root {
   --header-h: 4rem;
+  --header-h-not-home: 5rem;
 }
 /* :root {
   --foreground-rgb: 0, 0, 0;
