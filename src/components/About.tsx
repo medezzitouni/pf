@@ -13,7 +13,11 @@ function About() {
       <div className="flex justify-center items-end lg:items-center lg:py-0 w-full  lg:w-1/2 lg:h-full bg-blue-">
         <div
           className={`
-            w-full h-72 py-3 lg:w-4/6 lg:h-4/6 bg-cover bg-no-repeat bg-center lg:rounded-[46%_54%_37%_63%/60%_28%_72%_40%]
+            w-full h-72 md:w-3/4 md:h-1/2
+            py-3 xl:w-4/6 xl:h-4/6 bg-cover
+            bg-no-repeat
+            bg-center
+            lg:rounded-[46%_54%_37%_63%/60%_28%_72%_40%]
           `}
           style={{ backgroundImage: `url(${aboutImage})` }}
         ></div>
