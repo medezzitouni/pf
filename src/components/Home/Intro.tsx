@@ -32,9 +32,10 @@ function Intro({ className }: Props) {
             {t("intro")}{" "}
             <Link
               href={nav["about"].url}
-              className="text-xs text-gray-500 cursor-pointer"
+              className="text-xs text-gray-700 dark:text-gray-300 cursor-pointer underline decoration-solid"
             >
               {t("read_more")}
+              
             </Link>
           </p>
         </div>
