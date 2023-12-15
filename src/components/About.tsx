@@ -7,9 +7,8 @@ function About() {
   return (
     <section
       id="about"
-      className={`min-h-screen lg:h-screen   lg:pt-0 flex flex-col lg:flex-row  bg-red-`}
+      className={`min-h-screen lg:h-screen lg:pt-0 flex flex-col lg:flex-row  bg-red-`}
     >
-      {/* pt-[var(--header-h)]*/}
       <div className="flex justify-center items-end lg:items-center lg:py-0 w-full  lg:w-1/2 lg:h-full bg-blue-">
         <div
           className={`
