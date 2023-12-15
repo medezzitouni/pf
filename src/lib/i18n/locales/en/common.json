@@ -8,7 +8,8 @@
   "coming_soon": "Coming Soon!",
   "intro_long": "As a highly skilled software engineer specializing in web technologies, I possess exceptional expertise. With a track record of creating high-performance full-stack web applications, I have mastered a range of modern tools such as React.js, Vue.js, Node.js, Express, Nest, and to a lesser extent, Angular, Spring, Django. My expertise also extends to databases, including Postgresql, MySQL, Firebase, and MongoDB.",
   
-  "intro" : "As a highly skilled software engineer specializing in web technologies, I possess exceptional expertise. With a track record of creating high-performance full-stack web applications, I have mastered a range of modern tools such as React.js, Vue.js, Node.js.",
+  "intro_version1": "As a highly skilled software engineer specializing in web technologies, I possess exceptional expertise. With a track record of creating high-performance full-stack web applications, I have mastered a range of modern tools such as React.js, Vue.js, Node.js.",
+  "intro" : "Hey 👋 I'm Med, an IT consultant, I have five years of experience with IT companies from around the globe, which has allowed me to gain solid professional expertise. Looking forward to putting my passion and experience into your service. ",
   
   "about_intro": "I have mastered a range of modern tools such as React.js, Vue.js, Node.js, Express.js, Nest.js, and to a lesser extent, Angular.js, Spring.js, Django.js. My expertise also extends to databases, including Postgresql, MySQL, Redis, Firebase, and MongoDB.",
   "read_more": "Read more...",

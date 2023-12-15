@@ -34,7 +34,8 @@ export default function Index() {
       <NoSSR>
         {/*
          uncomment this when you switch to a side bar instead of mobile Menu
-         <Side sideBar={sideBar} handleSideBar={handleSideBar} /> */}
+         <Side sideBar={sideBar} handleSideBar={handleSideBar} />
+         */}
         <Header
           dark={dark}
           handleDark={handleDark}
