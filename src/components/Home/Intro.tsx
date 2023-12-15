@@ -16,8 +16,8 @@ function Intro({ className }: Props) {
 
   return (
     <div className={`${className}`}>
-      <div className="h-full w-full lg:w-9/12 lg:h-2/3 flex flex-col items-center lg:gap-6 bg-red-">
-        <div className=" py-5 flex flex-col gap-2 lg:gap-6 text-center lg:text-start bg-blue-">
+      <div className="h-full w-full lg:w-9/12 lg:h-2/3 flex flex-col items-center justify-center lg:gap-6 bg-red-">
+        <div className="py-5 flex flex-col gap-2 lg:gap-6 text-center lg:text-start bg-blue-">
           <h1
             className={`text-4xl lg:text-6xl xl:text-7xl ${indie.className} leading-tight lg:leading-none`}
           >

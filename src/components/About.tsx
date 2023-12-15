@@ -13,8 +13,8 @@ function About() {
       <div className="flex justify-center items-end lg:items-center lg:py-0 w-full  lg:w-1/2 lg:h-full bg-blue-">
         <div
           className={`
-            w-full h-72 md:w-3/4 md:h-1/2
-            py-3 xl:w-4/6 xl:h-4/6 bg-cover
+            w-full h-72 lg:w-[28rem] lg:h-[28rem]
+            py-3 lg:py-0 bg-cover
             bg-no-repeat
             bg-center
             lg:rounded-[46%_54%_37%_63%/60%_28%_72%_40%]
@@ -23,9 +23,9 @@ function About() {
         ></div>
       </div>
       <div
-        className={`w-full lg:w-1/2 h-1/2 lg:h-full ${rubic.className} flex items-center justify-center py-4 px-8 bg-purple-`}
+        className={`w-full lg:w-1/2 h-1/2 lg:h-full ${rubic.className} flex items-center justify-center py-4 px-8 bg-purple-40`}
       >
-        <div className="h-full lg:h-4/6 text-sm lg:text-base flex flex-col gap-y-10 bg-blue-">
+        <div className="h-full lg:h-4/6 text-sm lg:text-base flex flex-col justify-center gap-y-10 bg-blue-">
           <p className="leading-relaxed">{t("about_intro")}</p>
           <div>
             <div className="text-xl text-yellow-400 py-4">
