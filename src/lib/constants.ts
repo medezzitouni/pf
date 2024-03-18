@@ -36,7 +36,7 @@ export const profileImage =
   "/assets/ai-developer-desk-setup/three-monitors.jpeg";
 export const aboutImage = "/assets/med/about.jpg";
 
-export const serviceImage = "/assets/services/service1.jpg";
+export const serviceImage = "/assets/services/service.jpg";
 
 export const logo = "/assets/med/logo.png";
 
