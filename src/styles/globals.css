@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-h: 4rem;
+}
+.service-card {
+  @apply min-h-[15rem]  md:min-h-[15rem]
+   bg-gray-950/20 flex flex-col;
+}
+
+.service-card > :nth-child(1) {
+  @apply  text-center flex-[.3] pt-4
+  md:text-lg font-serif font-black
+  ;
+}
+
+.service-card > :nth-child(2) {
+  @apply  flex-1;
+}
+@layer base {
+  .font-outline-xs {
+    -webkit-text-stroke: .5px black;
+  }
+
+  .font-outline-sm {
+    -webkit-text-stroke: 1px black;
+  }
+  .font-outline-md {
+    -webkit-text-stroke: 2px black;
+  }
+  .font-outline-lg {
+    -webkit-text-stroke: 4px black;
+  }
+  .font-outline-xl {
+    -webkit-text-stroke: 6px black;
+  }
+  .font-outline-white {
+    -webkit-text-stroke-color: white;
+  }
+  .font-outline-indigo {
+    -webkit-text-stroke-color: #818cf8;
+  }
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */

@@ -1,0 +1,45 @@
+{
+  "welcome": "Bonjour Je suis Med Ezzitouni",
+  "hero-title-1": "Votre Ami Dans Le succès Digital",
+  "hero-title-2": "Élevez Votre Entreprise.",
+  "position": "Ingénieur logiciel & Marketeur Digital",
+  
+  "client_need": "Autonomisez votre parcours digital avec des solutions innovantes et durables, assurant un impact continu ! 🚀",
+  "resume": "Curriculum vitae",
+  
+  "home": "Accueil",
+  "about": "À propos",
+  "services": "Prestations",
+  "achievements": "Réalisations",
+  "contact": "Contact",
+  "blog": "Blog",
+  "products": "Produits",
+  "intro-title": "Med, L'ami Digital qui vous accompagne",
+  "intro": "Med, votre allié expert en technologie ! Diplômé d'un Master en Ingénierie Logicielle pour le Cloud et fort d'une solide expérience dans les technologies de pointe, il est là pour concrétiser vos projets de sites web et d'applications mobiles. Avec Med à vos côtés, soyez assuré que vos projets seront traités avec précision, offrant des résultats de haute qualité tout en respectant les délais.",
+
+  "services-title": "Services",
+  "coming_soon": "Bientôt Disponible!",
+  "intro_long": "En tant qu'ingénieur logiciel hautement qualifié spécialisé dans les technologies web, je suis porteur d'une expertise exceptionnelle. Fort d'un historique de création d'applications web full-stack à haute performance, j'ai maîtrisé une gamme d'outils modernes tels que React.js, Vue.js, Node.js, Express, Nest, et dans une moindre mesure Angular, Spring, Django. Ma compétence s'étend également aux bases de données, notamment Postgresql, MySQL, Redis, Firebase et MongoDB.",
+
+  "intro_version1": "En tant qu'ingénieur logiciel hautement qualifié spécialisé dans les technologies web, je suis porteur d'une expertise exceptionnelle. Fort d'un historique de création d'applications web full-stack à haute performance, j'ai maîtrisé une gamme d'outils modernes tels que React.js, Vue.js, Node.js",
+  "intro.v1": "Salut 👋, je suis Med, consultant en informatique. J'ai cinq ans d'expérience avec des entreprises informatiques du monde entier, ce qui m'a permis d'acquérir une solide expertise professionnelle. J'ai hâte de mettre ma passion et mon expérience à votre service. ",
+  
+  "about_intro": "je maîtrise une gamme d'outils modernes tels que React.js, Vue.js, Node.js, Express, Nest, et dans une moindre mesure Angular, Spring, Django. Ma compétence s'étend également aux bases de données, notamment Postgresql, MySQL, Redis, Firebase et MongoDB.",
+  "read_more": "Lire plus...",
+  "contact_us": "Contactez moi",
+  "call_to_action": "Contactez moi",
+  "functional_skills": "Compétences fonctionnelles:",
+  "functional_skills_1": "Assistance à maitrise d’œuvre",
+  "functional_skills_2": "Métiers",
+  "functional_skills_1_details": "Analyse, Conception (UML), Revue de code et Support technique.",
+  "functional_skills_2_details": "Banque, Retail, E-Business et d’autres",
+  "functional_skills_2_details_1": "Participation à la conception des projets from scratch.",
+  "functional_skills_2_details_2": "Documenter le travail réalisé.",
+  "functional_skills_2_details_3": "Participation à la transformation digitale.",
+  "functional_skills_2_details_4": "Travail en équipe pour réaliser la vision projet.",
+  "functional_skills_2_details_5": "Création de test unitaires.",
+  "functional_skills_2_details_6": "Spécification fonctionnelle.",
+  "functional_skills_2_details_7": "La correction des bugs remontées par les utilisateurs des solutions.",
+
+  "about.bigImage.alt": "Des développeurs marocains travaillent dans les bureaux d'une entreprise numérique"
+}
